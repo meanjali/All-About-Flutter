@@ -11,6 +11,8 @@ void main() {
   }
   Set<String> movies = Set.from(["Simba", "God Father", "Titanic"]);
   movies.add("Andhadhun");
+  print(movies.isEmpty);
+  print(movies.length);
   print(movies.contains("Simba"));
   for (String ele in movies) {
     print(ele);
