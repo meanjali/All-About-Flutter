@@ -42,7 +42,7 @@ void findPerimeter(int length, int breadth) =>
 int getArea(int length, int breadth) => length * breadth;
 */
 //Function parameters in PPT
-//5. Closures
+/*
 void main() {
   final val = [1, 2, 3, 4, 5];
   print(addition(val));
@@ -50,4 +50,28 @@ void main() {
 
 int addition(List<int> val) {
   return val.fold(0, (res, val) => res + val);
+}
+*/
+//Closures
+void main() {
+  int a;
+  second() {
+    a = 12;
+    return a;
+  }
+
+  print(a);
+  second();
+  print(a);
+
+  var r = addition(12);
+  print(r(2));
+}
+
+addition(int o) {
+  value(int n) {
+    return o + n;
+  }
+
+  return value;
 }
