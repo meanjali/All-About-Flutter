@@ -1,5 +1,6 @@
 //1.
-/*void main() {
+/*
+void main() {
   var myMap = {
     "id": "jayesh",
     "password": "1234",
@@ -31,15 +32,20 @@ void main() {
 }
 */
 //3.
+
 import 'dart:collection';
 
 main() {
   HashMap map1 = new HashMap<int, String>();
   //LinkedHashMap map2 = new LinkedHashMap<int, String>();
   map1[1] = 'A';
-  //map1.putIfAbsent(2, () => 'A');
+  //map1.putIfAbsent(1, () => 'A');
   map1.update(1, (e) => 'A');
-  map1.update(1, (e) => '${e}A');
+  print(map1);
+  map1.update(1, (f) => '${f}B');
+  print(map1);
+  map1.update(1, (g) => '${g}' '${g}');
+  print(map1);
   map1.update(2, (e) => 'B', ifAbsent: () => 'B');
   print(map1);
   //Size of map
