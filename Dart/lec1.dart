@@ -6,15 +6,18 @@
 }
 */
 //2. User Input
-/*import 'dart:io';
+
+import 'dart:io';
+
 main() {
-  stdout.writeln("Pleas enter something?");
+  print("Pleas enter something?");
   String data = stdin.readLineSync();
   print('You Entered $data');
 }
-*/
+
 //3. Data Types
-/*main() {
+/*
+main() {
   print("EVEERYTHING IN DART IS OBJECT\N");
   int price1 = 250;
   var price2 = 500;
@@ -43,8 +46,8 @@ main() {
 }
 */
 //4.
-
-/*main() {
+/*
+main() {
   var s1 = 'Single quote works.';
   var s2 = "Double quotes works as well.";
   var s3 = 'We can use string delimenter. For eg, it\'s';
@@ -72,8 +75,9 @@ Multi-line string with 3 double quotes.""";
   print(s6);
 }
 */
+/*
 //5. Type Conversion
-/*main() {
+main() {
   var c1 = int.parse('1');
   //str is character - var c1 = int.parse('str');
   assert(c1 == 1);
