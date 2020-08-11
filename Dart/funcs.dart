@@ -52,6 +52,7 @@ int addition(List<int> val) {
   return val.fold(0, (res, val) => res + val);
 }
 */
+/*
 //Closures
 void main() {
   int a;
@@ -74,4 +75,64 @@ addition(int o) {
   }
 
   return value;
+}
+*/
+/*
+//1. Naming functions with a variable
+add(a, b) {
+  return a + b;
+}
+
+var operation;
+void main() {
+  operation = add;
+  var res = operation(2, 1);
+  print("Result is ${res}");
+}
+*/
+/*
+//2. Passing function as an argument to another function
+add(a, b) {
+  return a + b;
+}
+f1(o, x, y) {
+  return o(x, y);
+}
+void main() {
+  var res = f1(add, 2, 1);
+  print("Result is ${res}");
+}
+*/
+/*
+//3. Returning function
+add(a, b) => a + b;
+sub(a, b) => a - b;
+c(bool t) => t ? add : sub;
+void main() {
+  var o = c(true);
+  var res = o(2, 1);
+  print("Result is ${res}");
+}
+*/
+/*
+//4. Storing function i data structure
+add(a, b) => a + b;
+  sub(a, b) => a - b;
+void main() {
+  var os = [add, sub];
+  var o = os[0];
+  var res = o(2, 1);
+  print("Result is ${res}");
+}
+*/
+//5. Closures
+check(val) {
+  var c = 1;
+  return () => print("Value is ${val + c++}");
+}
+
+void main() {
+  var f = check(2);
+  f();
+  f();
 }
