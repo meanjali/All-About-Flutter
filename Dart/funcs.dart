@@ -56,6 +56,7 @@ int addition(List<int> val) {
   return val.fold(0, (res, val) => res + val);
 }
 */
+/*
 void main() {
   String m = "Flutter uses Dart";
   //Define Closure
@@ -76,7 +77,7 @@ void main() {
   var speak = talk();
   speak();
 }
-
+*/
 /*
 //1. Naming functions with a variable
 add(a, b) {
@@ -131,9 +132,26 @@ check(val) {
   var c = 1;
   return () => print("Value is ${val + c++}");
 }
+
 void main() {
   var f = check(2);
   f();
   f();
 }
 */
+
+//Closures
+Function gg(num add) {
+  return (num i) => add + i;
+}
+
+void main() {
+  // Create a function that adds 2.
+  var g1 = gg(2);
+
+  // Create a function that adds 4.
+  var g2 = gg(4);
+
+  print(g1(3));
+  print(g2(3));
+}
