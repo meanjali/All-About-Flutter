@@ -56,31 +56,27 @@ int addition(List<int> val) {
   return val.fold(0, (res, val) => res + val);
 }
 */
-/*
-//Closures
 void main() {
-  int a;
-  second() {
-    a = 12;
-    return a;
-  }
-
-  print(a);
-  second();
-  print(a);
-
-  var r = addition(12);
-  print(r(2));
+  String m = "Flutter uses Dart";
+  //Define Closure
+  Function showMessage = () {
+    m = "Value of m is changed";
+    print(m);
+  };
+  showMessage();
+//Define Closure
+  Function talk = () {
+    String msg = "Hello world!!";
+    Function say = () {
+      msg = "Value is changed here as well!!";
+      print(msg);
+    };
+    return say;
+  };
+  var speak = talk();
+  speak();
 }
 
-addition(int o) {
-  value(int n) {
-    return o + n;
-  }
-
-  return value;
-}
-*/
 /*
 //1. Naming functions with a variable
 add(a, b) {
@@ -135,7 +131,6 @@ check(val) {
   var c = 1;
   return () => print("Value is ${val + c++}");
 }
-
 void main() {
   var f = check(2);
   f();
