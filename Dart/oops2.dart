@@ -14,6 +14,8 @@ class Animal {
   saySomething(String m) => this._display(m);
 }
 */
+
+/*
 class Animal {
   String _name;
   int _age = 0;
@@ -26,4 +28,17 @@ class Animal {
 
   int get age => _age;
   void set age(int val) => _age = val * 7;
+}
+*/
+
+class Animal {
+  static int c = 0;
+  //int c = 0;
+  Animal() {
+    c++;
+    print("There is ${c} of us");
+  }
+  static void run() {
+    print("Running");
+  }
 }

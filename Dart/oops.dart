@@ -116,6 +116,7 @@ main() {
   cat.saySomething("Meow");
 }
 */
+/*
 //6. Getters and Setters
 import 'oops2.dart';
 
@@ -126,4 +127,15 @@ void main() {
   print("Before Setter - ${dog.age}");
   dog.age = 4; //setter
   print("After Setter - ${dog.age}"); //getter
+}
+*/
+//Static members
+import 'oops2.dart';
+
+void main() {
+  Animal dog = Animal();
+  Animal cat = Animal();
+  Animal bird = Animal();
+  Animal fish = Animal();
+  Animal.run();
 }
