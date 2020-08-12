@@ -4,6 +4,7 @@ int Age() {
   int age = 12;
   return age;
 }
+
 main() {
   int myAge = Age();
   print(myAge);
@@ -15,6 +16,7 @@ AboutMySelf(int age, int totalGf) {
   print(age);
   print(totalGf);
 }
+
 main() {
   AboutMySelf(20, 0);
 }
@@ -25,6 +27,7 @@ int Sum(int n1, int n2) {
   int a = n1 + n2;
   return a;
 }
+
 main() {
   int mySum = Sum(20, 30);
   print(mySum);
@@ -37,6 +40,7 @@ void main() {
   int rectArea = getArea(10, 5);
   print("The area is $rectArea");
 }
+
 void findPerimeter(int length, int breadth) =>
     print("The perimeter is ${2 * (length + breadth)}");
 int getArea(int length, int breadth) => length * breadth;
@@ -125,6 +129,7 @@ void main() {
   print("Result is ${res}");
 }
 */
+/*
 //5. Closures
 check(val) {
   var c = 1;
@@ -136,3 +141,4 @@ void main() {
   f();
   f();
 }
+*/
