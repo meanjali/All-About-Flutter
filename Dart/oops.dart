@@ -129,7 +129,7 @@ void main() {
   print("After Setter - ${dog.age}"); //getter
 }
 */
-
+/*
 //Static members
 import 'oops2.dart';
 
@@ -140,3 +140,124 @@ void main() {
   Animal fish = Animal();
   Animal.run();
 }
+*/
+/*
+//Single Inheritance - Example 1
+class A {
+  displayA() {
+    print("A");
+  }
+}
+
+class B extends A {
+  displayB() {
+    print("B");
+  }
+}
+
+void main() {
+  A a = A();
+  B b = B();
+  a.displayA();
+  b.displayA();
+  b.displayB();
+}
+*/
+/*
+//Multilevel Inheritance - Example 2
+class A {
+  displayA() {
+    print("A");
+  }
+}
+
+class B extends A {
+  displayB() {
+    print("B");
+  }
+}
+
+class C extends B {
+  displayC() {}
+}
+
+void main() {
+  A a = new A();
+  B b = new B();
+  C c = new C();
+  a.displayA();
+  b.displayA();
+  b.displayB();
+  c.displayA();
+  c.displayB();
+  c.displayC();
+}
+*/
+/*
+//Inhertance
+void main() {
+  var dog = Dog();
+  dog.breed = "Medium hair";
+  dog.color = "Black";
+  dog.bark();
+  dog.eat();
+
+  var animal = Animal();
+  animal.color = "White";
+  animal.eat();
+}
+
+class Animal {
+  String color;
+  void eat() {
+    print("Eat!!");
+  }
+}
+
+class Dog extends Animal {
+  String color;
+  String breed;
+  void bark() {
+    print("Bark!!");
+  }
+  /*
+    void eat(){
+      print("Eat!!");
+    }
+    */
+}
+
+class Cat extends Animal {
+  //String color;
+  int age;
+  void meow() {
+    print("Meow!!");
+  }
+  /*
+  void eat(){
+    print("Eat!!");
+  }
+  */
+}
+*/
+/*
+//Check
+class Favourite{
+  int rank=5;
+  Test(){
+    print("This is Test Method");
+  }
+	Calculation(int a,int b){
+		print(a+b);
+	}
+}
+class Normal extends Favourite{
+  
+}
+void main(){
+	Normal normal=new Normal();
+  	normal.Test();
+ 	print(normal.rank);
+  	normal.Calculation(5,10);
+}
+*/
