@@ -96,9 +96,11 @@ void main() {
 add(a, b) {
   return a + b;
 }
+
 f1(o, x, y) {
   return o(x, y);
 }
+
 void main() {
   var res = f1(add, 2, 1);
   print("Result is ${res}");
@@ -146,10 +148,8 @@ Function gg(num add) {
 }
 
 void main() {
-  // Create a function that adds 2.
   var g1 = gg(2);
 
-  // Create a function that adds 4.
   var g2 = gg(4);
 
   print(g1(3));

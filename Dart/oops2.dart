@@ -1,4 +1,3 @@
-/*
 //Example 1
 class Animal {
   String _name = "", breed = "";
@@ -13,7 +12,6 @@ class Animal {
   _display(String message) => print("Message is ${message}");
   saySomething(String m) => this._display(m);
 }
-*/
 
 /*
 class Animal {

@@ -39,12 +39,12 @@ void main() {
   var firstCar = Car();
   firstCar.name = 'Prius';
   firstCar.colour = 'White';
-//  print('1st car name is ${firstCar.name} and colour is ${firstCar.colour}');
+  print('1st car name is ${firstCar.name} and colour is ${firstCar.colour}');
   firstCar.driving();
   var secondCar = Car();
   secondCar.name = 'Honda Fit';
   secondCar.colour = 'Black';
-//  print('2nd car name is ${secondCar.name} and colour is ${secondCar.colour}');
+  print('2nd car name is ${secondCar.name} and colour is ${secondCar.colour}');
   secondCar.brake();
 }
 
@@ -103,7 +103,7 @@ void main() {
   }
 }
 */
-/*
+
 //5. Encapsulation - Public and Private Scope
 import 'oops2.dart';
 
@@ -115,7 +115,7 @@ main() {
   //If display is private; can not access from this file; saySomething(String message)=> this._display(message)
   cat.saySomething("Meow");
 }
-*/
+
 /*
 //6. Getters and Setters
 import 'oops2.dart';
@@ -129,6 +129,7 @@ void main() {
   print("After Setter - ${dog.age}"); //getter
 }
 */
+/*
 //Static members
 import 'oops2.dart';
 
@@ -139,3 +140,4 @@ void main() {
   Animal fish = Animal();
   Animal.run();
 }
+*/
