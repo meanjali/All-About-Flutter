@@ -103,7 +103,7 @@ void main() {
   }
 }
 */
-
+/*
 //5. Encapsulation - Public and Private Scope
 import 'oops2.dart';
 
@@ -115,7 +115,7 @@ main() {
   //If display is private; can not access from this file; saySomething(String message)=> this._display(message)
   cat.saySomething("Meow");
 }
-
+*/
 /*
 //6. Getters and Setters
 import 'oops2.dart';
@@ -123,13 +123,13 @@ import 'oops2.dart';
 void main() {
   Animal dog = Animal("Rango", 6);
   dog.name = "Fiddo"; //setter
-  print(dog.name); //getter
+  print(dog.naam); //getter
   print("Before Setter - ${dog.age}");
   dog.age = 4; //setter
   print("After Setter - ${dog.age}"); //getter
 }
 */
-/*
+
 //Static members
 import 'oops2.dart';
 
@@ -140,4 +140,3 @@ void main() {
   Animal fish = Animal();
   Animal.run();
 }
-*/
