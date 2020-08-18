@@ -1,7 +1,5 @@
 import 'mammal.dart';
 
-import 'mammal.dart';
-
 class Feline extends Mammal {
   bool hasClaws = true;
   void grow() => print("grrrrr");
