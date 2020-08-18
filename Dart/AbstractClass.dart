@@ -25,7 +25,7 @@ class ContractEmp extends Employees {
   }
 
   void calPF() {
-    print("PF DEduction");
+    print("PF DEduction of Interns");
   }
 }
 
