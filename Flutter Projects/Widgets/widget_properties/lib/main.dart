@@ -32,7 +32,7 @@ void main() {
             ),
             Container(
               color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
               padding: EdgeInsets.all(10.0),
               child: Row(
                 children: [
@@ -52,7 +52,7 @@ void main() {
             ),
             Container(
               color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
               padding: EdgeInsets.all(10.0),
               child: Row(
                 children: [
