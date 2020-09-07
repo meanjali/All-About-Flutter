@@ -4,33 +4,41 @@ void main() {
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //mainAxisAlignment: MainAxisAlignment.spaceAround,
             //verticalDirection: VerticalDirection.up,
-            //mainAxisAlignment: MainAxisAlignment.center,
-            //mainAxisSize: MainAxisSize.max,
+            //mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Container(
-                width: 100.0,
-                color: Colors.teal,
+                //width: 100,
+                height: 100,
+                color: Colors.red,
                 child: Text("Container 1"),
               ),
-              Container(
-                width: 100.0,
-                color: Colors.white,
-                child: Text("Container 2"),
+              SizedBox(
+                height: 20.0,
               ),
               Container(
-                width: 100.0,
-                color: Colors.blueAccent,
+                //width: 100,
+                height: 100,
+                color: Colors.green,
+                child: Text("Container 2"),
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Container(
+                //width: 100,
+                height: 100,
+                color: Colors.blue,
                 child: Text("Container 3"),
               ),
               Container(
                 width: double.infinity,
-              ),
+              )
             ],
           ),
         ),

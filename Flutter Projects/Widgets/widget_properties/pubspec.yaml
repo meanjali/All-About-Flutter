@@ -46,6 +46,7 @@ flutter:
 
   assets:
     - images/pp.jpeg
+
   fonts:
     - family: Lob
       fonts:

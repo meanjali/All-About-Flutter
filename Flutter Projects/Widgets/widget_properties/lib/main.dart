@@ -37,7 +37,7 @@ void main() {
               child: Row(
                 children: [
                   Icon(
-                    Icons.email,
+                    Icons.account_circle,
                     color: Colors.teal,
                   ),
                   SizedBox(
