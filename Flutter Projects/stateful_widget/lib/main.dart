@@ -14,6 +14,8 @@ void main() {
   ));
 }
 
+
+
 class MAinPage extends StatefulWidget {
   @override
   _MAinPageState createState() => _MAinPageState();
@@ -34,6 +36,7 @@ class _MAinPageState extends State<MAinPage> {
       child: Row(
         children: [
           Expanded(
+            flex:2,
               child: FlatButton(
                   onPressed: () {
                     changeDice();

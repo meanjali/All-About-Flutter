@@ -11,8 +11,6 @@ class MusicalApp extends StatelessWidget {
     final p=AudioCache();
     p.play("note$v.wav");
   }
-
-
   Expanded createWidget({Color c,int n}){
     return Expanded(
       child: FlatButton(
