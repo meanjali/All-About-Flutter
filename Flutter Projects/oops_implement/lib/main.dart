@@ -12,6 +12,7 @@ class Quiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -31,18 +32,7 @@ class OopsConcept extends StatefulWidget {
 class _OopsConceptState extends State<OopsConcept> {
   List<Widget> score=[];
   List<bool> ans=[true,false,true];
-//  List<String> questions=[
-//    "Everything in Flutter is Widget",
-//    "Flutter is based on Java Prog lang",
-//    "Widgets in flutter are categorized as Stateful and Stateless"
-//  ];
-//  QnA q1=QnA(q:"Everything in Flutter is Widget",a:true);
 
-//List <QnA>questionBank=[
-//  QnA(q:"Everything in Flutter is Widget",a:true),
-//  QnA(q:"Flutter is based on Java Prog lang",a:false),
-//  QnA(q:"Widgets in flutter are categorized as Stateful and Stateless",a:true),
-//];
 
   void check(bool yourAnswer){
     bool correctAns=qb.getAnswer();
