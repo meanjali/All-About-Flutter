@@ -50,7 +50,8 @@ class _InfoState extends State<Info> {
                               sGender=Gender.f;
                             });
                           },
-                          col:sGender==Gender.f?activeColor:inactiveColor, cardChild:MyIconWidget(icon: FontAwesomeIcons.venus,label:"FEMALE")
+                          col:sGender==Gender.f?activeColor:inactiveColor,
+                          cardChild:MyIconWidget(icon: FontAwesomeIcons.venus,label:"FEMALE")
     ),
                 )
               ],
@@ -59,7 +60,8 @@ class _InfoState extends State<Info> {
 
           ),
           Expanded(
-            child: CustomCard(col:inactiveColor,
+            child: CustomCard(
+              col:inactiveColor,
             cardChild: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

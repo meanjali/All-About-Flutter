@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-class SecondScreen extends StatelessWidget {
+class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: Text('Screen 1'),
+        title: Text('First Screen'),
       ),
       body: Center(
         child: RaisedButton(
           color: Colors.red,
-          child: Text('Go Forwards To Screen 2'),
-          onPressed: () {},
+          child: Text('Go Forward To Second Screen'),
+          onPressed: () {
+            Navigator.pushNamed(context, '/second');
+          },
         ),
       ),
     );
