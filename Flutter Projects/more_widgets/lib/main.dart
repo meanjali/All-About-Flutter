@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
+/*
 void main() {
   runApp(MyApp(),
   );
@@ -91,10 +92,10 @@ Icon(i),
                   fontSize: 18.0
               ),
               ),
-              /*           child: Text("Settings",style: TextStyle(
+              *//*           child: Text("Settings",style: TextStyle(
                 fontSize: 16.0
               ),),
- */
+ *//*
               ),
               ],
             ),
@@ -104,3 +105,89 @@ Icon(i),
     );
   }
 }
+*/
+import 'package:flutter/services.dart';
+
+
+void main() => runApp(new HomePage());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new MaterialApp(
+      home: new HomePage(),
+      theme: new ThemeData(primarySwatch: Colors.blue),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return new HomePageState();
+  }
+}
+
+class HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: new Scaffold(
+        backgroundColor: Colors.white,
+        body: new Container(
+            padding: const EdgeInsets.all(40.0),
+            child: new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new TextField(
+                  decoration: new InputDecoration(labelText: "Enter your number"),
+                  keyboardType: TextInputType.number,
+                  inputFormatters: <TextInputFormatter>[
+                    FilteringTextInputFormatter.digitsOnly,
+                    LengthLimitingTextInputFormatter(12),
+                  ], // Only numbers can be entered
+                ),
+              ],
+            )),
+      ),
+    );
+  }
+}
+
+/*
+import 'package:flutter/material.dart';
+import 'Features.dart';
+import 'MainGridList.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: ListView(
+          children: <Widget>[
+            Features(),
+            GridSubject(),
+            MainGridList()
+          ],
+        )
+    );
+  }
+}*/
